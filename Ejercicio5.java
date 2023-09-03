@@ -2,43 +2,38 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
+        
         Scanner scanner = new Scanner(System.in);
 
-        System.out.print("Ingrese un número (1-7) para obtener el día de la semana: ");
-        int numeroDia = scanner.nextInt();
+        System.out.print("Ingrese un número del 1 al 7: ");
+        int numero = scanner.nextInt();
 
-        String diaSemana;
-
-        switch (numeroDia) {
+        switch (numero) {
             case 1:
-                diaSemana = "Lunes";
+                System.out.println("Lunes");
                 break;
             case 2:
-                diaSemana = "Martes";
+                System.out.println("Martes");
                 break;
             case 3:
-                diaSemana = "Miércoles";
+                System.out.println("Miércoles");
                 break;
             case 4:
-                diaSemana = "Jueves";
+                System.out.println("Jueves");
                 break;
             case 5:
-                diaSemana = "Viernes";
+                System.out.println("Viernes");
                 break;
             case 6:
-                diaSemana = "Sábado";
+                System.out.println("Sábado");
                 break;
             case 7:
-                diaSemana = "Domingo";
+                System.out.println("Domingo");
                 break;
             default:
-                diaSemana = "Número fuera de rango";
+                System.out.println("Número no correcto");
                 break;
         }
-
-        System.out.println("El día de la semana es: " + diaSemana);
-
-        scanner.close();
     }
 }
 
